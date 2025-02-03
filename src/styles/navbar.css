@@ -1,0 +1,35 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px; 
+
+	.logo {	}
+
+	nav {
+		.desktop-menu {
+			display: flex;
+			list-style: none;
+
+			li {
+				a {
+					padding: 7px 10px;
+					font-size: 20px;
+					font-weight: 500;
+					color: #000000;
+					text-transform: uppercase;
+					cursor: pointer;
+				}
+				
+				.active-link {
+					color: var(--prime-color);
+				}
+
+				.contact-us {
+					color: #FFFFFF;
+					background-color: var(--prime-color);
+				}
+			}
+		}
+	}
+}

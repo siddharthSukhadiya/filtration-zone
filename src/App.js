@@ -1,11 +1,13 @@
+import Navbar from './components/navbar'
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Filtration Zone</h1>
-    </div>
-  );
+    return (
+        <div id='App'>
+            <Navbar />
+        </div>
+    );
 }
 
 export default App;
