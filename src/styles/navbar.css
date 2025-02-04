@@ -4,8 +4,6 @@ header {
 	align-items: center;
 	padding: 20px 100px; 
 
-	.logo {	}
-
 	nav {
 		.desktop-menu {
 			display: flex;

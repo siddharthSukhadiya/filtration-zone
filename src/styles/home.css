@@ -1,0 +1,30 @@
+#home {
+	.hero-section {
+		background-color: var(--bg-soft-gray);
+
+		.hero-wrapper {
+	        display: flex;
+        	align-items: center;
+
+        	img {
+        		width: 400px;
+        		margin: 80px;
+        	}
+
+        	.heading {
+        		width: 50%;
+        		margin-left: 50px;
+
+        		h3 {
+        			font-size: 50px;
+        			color: var(--prime-color);
+        			margin-bottom: 30px;
+        		}
+
+        		p {
+        			font-size: 25px;
+        		}
+        	}
+		}
+	}
+}

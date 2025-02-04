@@ -8,7 +8,7 @@
 
 :root {
     --prime-color: #50BE3C;
-/*    #312F2F*/
+    --bg-soft-gray: #E3E3E3;
 }
 
 button {
@@ -17,4 +17,18 @@ button {
 
 a {
     text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    max-width: 1520px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 }
