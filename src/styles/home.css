@@ -11,17 +11,44 @@
         		margin: 80px;
         	}
 
-        	.heading {
+        	.text {
         		width: 50%;
         		margin-left: 50px;
 
-        		h3 {
+        		.title {
         			font-size: 50px;
         			color: var(--prime-color);
         			margin-bottom: 30px;
         		}
 
-        		p {
+        		.description {
+        			font-size: 25px;
+        		}
+        	}
+		}
+	}
+
+	.about-us {
+		.about-us-wrapper {
+	        display: flex;
+        	align-items: center;
+
+        	img {
+        		width: 400px;
+        		margin: 80px;
+        	}
+
+        	.text {
+        		width: 50%;
+        		margin-left: 50px;
+
+        		.title {
+        			font-size: 50px;
+        			color: var(--prime-color);
+        			margin-bottom: 30px;
+        		}
+
+        		.description {
         			font-size: 25px;
         		}
         	}
