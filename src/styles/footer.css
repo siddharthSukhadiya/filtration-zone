@@ -1,0 +1,38 @@
+footer {
+	background-color: #000000;
+	color: #FFFFFF;
+
+	.footer-wraper {
+		display: flex;
+		justify-content: space-between;
+		margin: 100px 0;
+
+		div {
+			.title {
+				font-size: 22px;
+				font-weight: 500;
+				text-decoration: underline;
+				text-underline-offset: 5px;
+				margin-bottom: 20px;
+			}
+
+			ul li {
+				list-style-type: none;
+				margin-top: 10px;
+
+				a {
+					cursor: pointer;
+					color: #FFFFFF;
+				}
+			}
+		}
+
+		.company {
+			width: 500px;
+
+			p {
+				margin-top: 10px;
+			}
+		}
+	}
+}
