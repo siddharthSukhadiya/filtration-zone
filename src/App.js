@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
+
+import './styles/index.css';
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-
 import Home from './pages/Home'
-
-import './App.css';
 
 function App() {
     return (

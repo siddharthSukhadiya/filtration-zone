@@ -8,7 +8,8 @@
 
 :root {
     --prime-color: #50BE3C;
-    --bg-soft-gray: #E3E3E3;
+    --soft-gray: #E3E3E3;
+    --dark-gray: #312F2F;
 }
 
 button {
