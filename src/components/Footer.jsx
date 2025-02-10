@@ -6,7 +6,7 @@ import companyLogo from '../assets/companyLogoWhite.png'
 
 import { MdCall, MdEmail } from 'react-icons/md';
 
-function Footer() {
+const Footer = () => {
 
 	return (<footer>
 		<div className='container'>
@@ -28,8 +28,8 @@ function Footer() {
 		 			<ul>
 		 				<li><NavLink to='/'>Home</NavLink></li>
 		 				<li><NavLink to='/products'>Products</NavLink></li>
-		 				<li><NavLink to='/services'>Services</NavLink></li>
 		 				<li><NavLink to='/about'>About</NavLink></li>
+		 				<li><NavLink to='/contact-us'>Contact Us</NavLink></li>
 		 			</ul>
 		 		</div>
 		 		<div className='contact'>

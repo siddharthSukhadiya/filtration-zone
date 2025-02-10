@@ -7,7 +7,7 @@ import teeStrainers from '../assets/homePage/tee-strainers.webp'
 import filtersImg from '../assets/homePage/filters.webp'
 import filterHousingImg from '../assets/homePage/filter-housing.webp'
 
-function Home () {
+const Home = () => {
 
 	return (<div id='home'>
 		<div className='hero-section'>
