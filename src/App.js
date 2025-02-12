@@ -1,10 +1,11 @@
+import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom'
-
-import './styles/index.css';
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+
+const Products = lazy(() => import('./pages/Products'))
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/products' element={<Products />} />
             </Routes>
             <Footer />
         </div>
