@@ -28,6 +28,15 @@ a {
     overflow-x: hidden;
 }
 
+.section-heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--prime-color);
+    text-underline-offset: 5px;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         width: 90%;

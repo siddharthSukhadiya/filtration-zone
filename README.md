@@ -39,3 +39,12 @@ Moment.js (or date-fns): For handling and formatting dates, if needed. -->
 ### Developer Tools
 - **ESLint:** Ensures code quality by catching syntax and style errors.
 - **Prettier:** Formats code to maintain a consistent style.
+
+
+<!-- 
+    Heading Rules
+    - h1 : Company name
+    - h2 : Page name and section
+    - h3 : Product category
+    - h4 : Product name
+-->
