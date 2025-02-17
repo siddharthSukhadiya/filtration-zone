@@ -15,14 +15,6 @@ const Footer = () => {
 					<img src={companyLogo} alt='company-logo' />
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 				</div>
-				<div className='product'>
-					<p className='title'>Product Range</p>
-					<ul>
-						<li><NavLink to='/'>Pipeline Filters</NavLink></li>
-						<li><NavLink to='/'>Valve Housings</NavLink></li>
-						<li><NavLink to='/'>Flange Fittings</NavLink></li>
-					</ul>
-				</div>
 				<div className='links'>
 					<p className='title'>Main Menu</p>
 					<ul>
@@ -30,6 +22,14 @@ const Footer = () => {
 						<li><NavLink to='/products'>Products</NavLink></li>
 						<li><NavLink to='/about'>About</NavLink></li>
 						<li><NavLink to='/contact-us'>Contact Us</NavLink></li>
+					</ul>
+				</div>
+				<div className='product'>
+					<p className='title'>Product Range</p>
+					<ul>
+						<li><NavLink to='/'>Pipeline Filters</NavLink></li>
+						<li><NavLink to='/'>Valve Housings</NavLink></li>
+						<li><NavLink to='/'>Flange Fittings</NavLink></li>
 					</ul>
 				</div>
 				<div className='contact'>
