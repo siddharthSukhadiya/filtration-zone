@@ -20,6 +20,14 @@ a {
     text-decoration: none;
 }
 
+.line {
+    display: block;
+    height: 3px;
+    min-width: 10px;
+    border-bottom: 3px;
+    background-color: var(--prime-color);
+}
+
 .container {
     width: 80%;
     height: 100%;

@@ -1,20 +1,25 @@
 import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 
 const Products = lazy(() => import('./pages/Products'))
+const ContactUs = lazy(() => import('./pages/ContactUs'))
 
-function App() {
+const App = () => {
     return (
         <div id='App'>
-            <Navbar />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/products' element={<Products />} />
-            </Routes>
+            <Header />
+            <div style={{ marginTop: '100px' }}>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/filtration-zone' element={<Home />} />
+                    <Route path='/products' element={<Products />} />
+                    <Route path='/contact-us' element={<ContactUs />} />
+                </Routes>
+            </div>
             <Footer />
         </div>
     );

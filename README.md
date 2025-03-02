@@ -1,6 +1,5 @@
-# Filtration Zone 
-
-> A modern React web application that serves as a e-commerce platform. Built using React and other libraries for a seamless and dynamic user experience.
+# Filtration Zone
+A leading manufacturer &amp; supplier of pipeline filters, valve housing, and flange fittings that are used in various industrial applications
 
 ---
 

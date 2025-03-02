@@ -1,0 +1,169 @@
+#contact-us {
+    .hero-banner {
+        background-image: url('../../assets/contactUs/hero-banner.jpg');
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 50px;
+
+        .blur-back-dark {
+            height: 100%;
+            background-color: #333333b3;
+
+            .container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFFFFF;
+                font-size: 40px;
+            }
+        }
+    }
+
+    .contact-us-section {
+        margin-bottom: 50px;
+
+        .contact-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+
+            .box {
+                box-shadow: 4px 4px 20px #00000040;
+                padding: 15px 20px;
+                display: flex;
+                align-items: center;
+                width: 320px;
+                height: 100px;
+
+                .icon {
+                    background-color: #307F22;
+                    border-radius: 50%;
+                    padding: 13px 12px 10px;
+                    margin-right: 20px;
+
+                    svg {
+                        color: #FFFFFF;
+                        font-size: 20px;
+                        margin-bottom: -2px;
+                    }
+                }
+
+                .details {
+                    .title {
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                    }
+
+                    .data {
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+
+        .contact-form {
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 20px #50BE3C40;
+            margin: 50px;
+            justify-content: space-between;
+
+            img {
+                width: 50%;
+            }
+
+            form {
+                width: 40%;
+                margin-right: 50px;
+
+                .inputGroup {
+                    margin: 20px auto;
+                    position: relative;
+
+                    textarea {
+                        resize: none;
+                    }
+
+                    input,
+                    textarea {
+                        font-size: 16px;
+                        padding: 13px;
+                        outline: none;
+                        border: 2px solid rgb(200, 200, 200);
+                        background-color: transparent;
+                        border-radius: 5px;
+                        width: 100%;
+                    }
+
+                    label {
+                        font-size: 16px;
+                        position: absolute;
+                        left: 0;
+                        padding: 13px;
+                        margin-left: 8px;
+                        pointer-events: none;
+                        transition: all 0.3s ease;
+                        color: rgb(100, 100, 100);
+                    }
+
+                    :is(input:focus, input:valid, textarea:focus, textarea:valid)~label {
+                        transform: translateY(-50%) scale(.9);
+                        margin: 0;
+                        padding: 0 5px;
+                        background-color: #FFFFFF;
+                    }
+
+                    :is(input:focus, input:valid, textarea:focus, textarea:valid) {
+                        border-color: #797979;
+                    }
+                }
+
+                button {
+                    padding: 10px 50px;
+                    background-color: #50BE3C;
+                    color: #FFFFFF;
+                    border: transparent;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-box {
+                padding: 50px 0;
+                flex-direction: column;
+                align-items: center;
+
+                .box {
+                    width: calc(100% - 40px);
+                    margin-bottom: 25px;
+                }
+            }
+
+            .contact-form {
+                flex-direction: column;
+                margin: 20px;
+
+                img {
+                    width: 100%;
+                }
+
+                form {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 20px;
+
+                    button {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
