@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='footer-wraper'>
                 <div className='company'>
                     <img src={companyLogo} alt='company-logo' />
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <p>Manufacturer and supplier of pipeline filters, valve housings, and flange fittings that are used in various industrial applications.</p>
                 </div>
                 <div className='links'>
                     <p className='title'>Main Menu</p>

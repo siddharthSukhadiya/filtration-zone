@@ -1,8 +1,5 @@
 import './styles/products.css'
 
-import flange1Img from '../assets/products/flange1.webp'
-import flange2Img from '../assets/products/flange2.webp'
-import flange3Img from '../assets/products/flange3.webp'
 import valve1Img from '../assets/products/valve1.webp'
 import valve2Img from '../assets/products/valve2.webp'
 import valve3Img from '../assets/products/valve3.webp'
@@ -19,43 +16,76 @@ const Products = () => {
         </section>
         <section className='product-section'>
             <div className='container'>
-                <section className='flanges-section'>
-                    <h3 className='section-heading'>Fitting Flanges</h3>
-                    <div className='product-list'>
-                        <div className='product-card'>
-                            <img src={flange1Img} alt="Flange" className='product-image' />
-                            <h4>Weld Neck Flange</h4>
-                            <p><b>Size:</b> 1/2” to 24”</p>
-                        </div>
-                        <div className='product-card'>
-                            <img src={flange2Img} alt="Flange" className='product-image' />
-                            <h4>Threaded Flange</h4>
-                            <p><b>Size:</b> 1/2” to 6”</p>
-                        </div>
-                        <div className='product-card'>
-                            <img src={flange3Img} alt="Flange" className='product-image' />
-                            <h4>Socket weld Flange</h4>
-                            <p><b>Size:</b> 1/2” to 12”</p>
-                        </div>
-                    </div>
-                </section>
                 <section className='valve-section'>
                     <h3 className='section-heading'>Industrial Valve</h3>
                     <div className='product-list'>
                         <div className='product-card'>
-                            <img src={valve1Img} alt="Valve" className='product-image' />
+                            <img src={valve1Img} alt='product' className='product-image' />
                             <h4>Casted ball valve</h4>
                             <p><b>Material:</b> WCB, CF8, CF8M</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve2Img} alt="Valve" className='product-image' />
+                            <img src={valve2Img} alt='product' className='product-image' />
                             <h4>Gate Valve</h4>
                             <p><b>Material:</b> WCB, CF8, CF8M, CF3, CF3M</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt="Valve" className='product-image' />
+                            <img src={valve3Img} alt='product' className='product-image' />
                             <h4>Globe Valve</h4>
                             <p><b>Material:</b> WCB, CF8, CF8M, CF3, CF3M</p>
+                        </div>
+                    </div>
+                </section>
+                <section className='pipeline-strainers-section'>
+                    <h3 className='section-heading'>Pipeline Strainers</h3>
+                    <div className='product-list'>
+                        <div className='product-card'>
+                            <img src={valve1Img} alt='product' className='product-image' />
+                            <h4>Y Type Strainer Cast</h4>
+                            <p><b>Size:</b> ½” to 16”</p>
+                            <p><b>Class:</b>150/300/600/900/1500</p>
+                        </div>
+                        <div className='product-card'>
+                            <img src={valve2Img} alt='product' className='product-image' />
+                            <h4>Y Type Strainer Fabricated</h4>
+                            <p><b>Size:</b> 2" to 24"</p>
+                            <p><b>Class:</b>150/300</p>
+                        </div>
+                        <div className='product-card'>
+                            <img src={valve3Img} alt='product' className='product-image' />
+                            <h4>Y Type Strainer (PTFE Lined)</h4>
+                            <p><b>Size:</b> 1½” to 8”</p>
+                            <p><b>Class:</b>150</p>
+                        </div>
+                        <div className='product-card'>
+                            <img src={valve3Img} alt='product' className='product-image' />
+                            <h4>Pot Type Strainer</h4>
+                            <p><b>Size:</b> ½” to 16”</p>
+                            <p><b>Class:</b>150/300/600/900/1500</p>
+                        </div>
+                        <div className='product-card'>
+                            <img src={valve3Img} alt='product' className='product-image' />
+                            <h4>Simplex Basket Filter</h4>
+                            <p><b>Size:</b> ½” to 24”</p>
+                            <p><b>Class:</b>150/300/600/900</p>
+                        </div>
+                        <div className='product-card'>
+                            <img src={valve3Img} alt='product' className='product-image' />
+                            <h4>Cartridge Filter</h4>
+                            <p><b>Size:</b> ½” to 24”</p>
+                            <p><b>Class:</b>150/300/600/900</p>
+                        </div>
+                        <div className='product-card'>
+                            <img src={valve3Img} alt='product' className='product-image' />
+                            <h4>Duplex Cartridge Filter</h4>
+                            <p><b>Size:</b> ½” to 24”</p>
+                            <p><b>Class:</b>150/300/600/900</p>
+                        </div>
+                        <div className='product-card'>
+                            <img src={valve3Img} alt='product' className='product-image' />
+                            <h4>Conical / Temporary Strainers</h4>
+                            <p><b>Size:</b> ½” to 48”</p>
+                            <p><b>Class:</b>150/300/600/900</p>
                         </div>
                     </div>
                 </section>

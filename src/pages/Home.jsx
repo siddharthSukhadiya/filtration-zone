@@ -9,7 +9,7 @@ import aboutUsImg from '../assets/homePage/about-us.png'
 import strainerSolution from '../assets/homePage/strainer-solution.png'
 import teeStrainers from '../assets/homePage/tee-strainers.webp'
 import filtersImg from '../assets/homePage/filters.webp'
-import filterHousingImg from '../assets/homePage/filter-housing.webp'
+import filterHousingImg from '../assets/homePage/filter-housing.jpeg'
 import chooseUsBackground from '../assets/homePage/choose-us-background.png'
 
 const Home = () => {
@@ -34,7 +34,11 @@ const Home = () => {
                         <h4 className='title'>Leading Work That Saves Everyone's Life</h4>
                         <span className='line'></span>
                         <p className='sub-title'>Manufacturers of Stainer, Duplex Strainer, Basket Strainer, Y Type Strainer, Self Cleaning Filter</p>
-                        <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was in the 1960s with the release of sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of Lorem Ipsum.</p>
+                        <p className='description'>
+                            Our compony is a developing business entity engrossed in manufacturing and supplying process of best quality and top class industrial standard Strainers and Filters.
+                            Our offerings in this category are inclusive of various Strainers, Bag Filters, Filter Elements, Basket Filters,etc., are the most economical engineering equipment used for protecting valuable pieces of equipment like pumps, heat exchangers and flow meters from potentially damaging particles.
+                            Our all type of filters and strainers ensure continuous fluid flow as well as hassle free operation, is a result of our adherence to the international quality standards and rigorous testing of each filter and strainer.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -89,27 +93,27 @@ const Home = () => {
                     <img src={chooseUsBackground} alt='Choose us background' />
                     <div className='details'>
                         <p className='title'>Best Industrial Strainers Manufacturers and Suppliers in India - ACME Fluid Systems</p>
-                        <p className='description'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default </p>
+                        <p className='description'>We offer top-quality pipeline filters, valve housings, and flange fittings designed for durability and efficiency. With advanced manufacturing, strict quality control, and a customer-first approach, we ensure reliable solutions for industrial needs. Our commitment to innovation, timely delivery, and competitive pricing makes us the trusted choice.</p>
                         <div className='list'>
                             <div className='list-items'>
                                 <div className='icon'><TbTarget /></div>
                                 <div className='data'>
                                     <p className='heading'>Our Mission</p>
-                                    <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since </p>
+                                    <p className='description'>We strive to deliver superior industrial solutions through precision engineering, advanced technology, and sustainable practices, ensuring efficiency and safety in every application.</p>
                                 </div>
                             </div>
                             <div className='list-items'>
                                 <div className='icon'><MdRemoveRedEye /></div>
                                 <div className='data'>
                                     <p className='heading'>Our Vision</p>
-                                    <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since </p>
+                                    <p className='description'>To be the global leader in manufacturing high-quality pipeline filters, valve housings, and flange fittings, setting benchmarks in innovation, reliability, and customer satisfaction.</p>
                                 </div>
                             </div>
                             <div className='list-items'>
                                 <div className='icon'><FaEarthAsia /></div>
                                 <div className='data'>
                                     <p className='heading'>Our Values</p>
-                                    <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since </p>
+                                    <p className='description'>Integrity, innovation, and excellence drive us. We are committed to quality, customer-centric solutions, and continuous improvement, fostering long-term partnerships and sustainable growth.</p>
                                 </div>
                             </div>
                         </div>
