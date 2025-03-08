@@ -4,9 +4,8 @@ import { MdRemoveRedEye } from 'react-icons/md'
 import { FaEarthAsia } from 'react-icons/fa6'
 
 import './styles/home.css'
-import heroBannerImg from '../assets/homePage/hero-banner-back.webp'
+import companyLogo from '../assets/companyLogoWhite.png'
 import aboutUsImg from '../assets/homePage/about-us.png'
-import strainerSolution from '../assets/homePage/strainer-solution.png'
 import teeStrainers from '../assets/homePage/tee-strainers.webp'
 import filtersImg from '../assets/homePage/filters.webp'
 import filterHousingImg from '../assets/homePage/filter-housing.jpeg'
@@ -16,12 +15,14 @@ const Home = () => {
 
     return (<div id='home'>
         <section className='hero-section'>
-            <div className='container'>
-                <div className='hero-wrapper'>
-                    <img src={heroBannerImg} alt='Hero Banner' />
-                    <div className='text'>
-                        <h4 className='title'>Reliable Filtration & Fitting Solutions for Every Industry</h4>
-                        <p className='description'>Precision-engineered pipeline filters, valve housings, and flange fittings-designed for durability and efficiency in industrial applications.</p>
+            <div className='blur-back-dark'>
+                <div className='container'>
+                    <div className='hero-wrapper'>
+                        <img className='company-logo' src={companyLogo} alt='Hero Banner' />
+                        <div className='text'>
+                            <h4 className='title'>Reliable Filtration & Fitting Solutions for Every Industry</h4>
+                            <p className='description'>Precision-engineered pipeline filters, valve housings, and flange fittings-designed for durability and efficiency in industrial applications.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -39,47 +40,6 @@ const Home = () => {
                             Our offerings in this category are inclusive of various Strainers, Bag Filters, Filter Elements, Basket Filters,etc., are the most economical engineering equipment used for protecting valuable pieces of equipment like pumps, heat exchangers and flow meters from potentially damaging particles.
                             Our all type of filters and strainers ensure continuous fluid flow as well as hassle free operation, is a result of our adherence to the international quality standards and rigorous testing of each filter and strainer.
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section className='strainer-solution'>
-            <div className='container'>
-                <div className='strainer-solution-wrapper'>
-                    <div className='text'>
-                        <h4 className='title'>All Type Strainer Solutions</h4>
-                        <span className='line'></span>
-                        <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was in the 1960s with the release of sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
-                    <img src={strainerSolution} alt='Strainer Solution' />
-                </div>
-            </div>
-        </section>
-        <section className='products'>
-            <div className='container'>
-                <div className='products-wrapper'>
-                    <div className='heading'>
-                        <h2 className='section-heading'>Our Products</h2>
-                    </div>
-                    <div className='list'>
-                        <div className='item'>
-                            <NavLink to='/pipeline'>
-                                <img src={filtersImg} alt='Pipeline Strainers & Filters' />
-                                <p>Pipeline Strainers & Filters</p>
-                            </NavLink>
-                        </div>
-                        <div className='item'>
-                            <NavLink to='/filter'>
-                                <img src={filterHousingImg} alt='Filter Housings' />
-                                <p>Filter Housings</p>
-                            </NavLink>
-                        </div>
-                        <div className='item'>
-                            <NavLink to='/valve'>
-                                <img src={teeStrainers} alt='Industrial Valve' />
-                                <p>Industrial Valve</p>
-                            </NavLink>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -116,6 +76,35 @@ const Home = () => {
                                     <p className='description'>Integrity, innovation, and excellence drive us. We are committed to quality, customer-centric solutions, and continuous improvement, fostering long-term partnerships and sustainable growth.</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className='products'>
+            <div className='container'>
+                <div className='products-wrapper'>
+                    <div className='heading'>
+                        <h2 className='section-heading'>Our Products</h2>
+                    </div>
+                    <div className='list'>
+                        <div className='item'>
+                            <NavLink to='/products' state={{ section: 'industrial-valve' }}>
+                                <img src={teeStrainers} alt='Industrial Valve' />
+                                <p>Industrial Valve</p>
+                            </NavLink>
+                        </div>
+                        <div className='item'>
+                            <NavLink to='/products' state={{ section: 'pipeline-strainers' }}>
+                                <img src={filtersImg} alt='Pipeline Strainers & Filters' />
+                                <p>Pipeline Strainers & Filters</p>
+                            </NavLink>
+                        </div>
+                        <div className='item'>
+                            <NavLink to='/products' state={{ section: '' }}>
+                                <img src={filterHousingImg} alt='Filter Housings' />
+                                <p>Filter Housings</p>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

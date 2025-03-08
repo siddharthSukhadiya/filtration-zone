@@ -1,5 +1,5 @@
-import { lazy } from 'react';
-import { Route, Routes } from 'react-router-dom'
+import { lazy, useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -9,6 +9,12 @@ const Products = lazy(() => import('./pages/Products'))
 const ContactUs = lazy(() => import('./pages/ContactUs'))
 
 const App = () => {
+    const { pathname } = useLocation()
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, [pathname])
+
     return (
         <div id='App'>
             <Header />

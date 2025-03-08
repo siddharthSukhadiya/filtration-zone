@@ -1,20 +1,27 @@
 #home {
     .hero-section {
-        background-color: var(--soft-gray);
         margin: 0 0 50px;
+        background-image: url('../../assets/homePage/hero-banner.webp');
+        height: calc(100vh - 100px);
+        background-size: cover;
+        background-position: center;
 
         .hero-wrapper {
+            height: calc(100vh - 100px);
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            text-align: center;
 
-            img {
-                width: 400px;
-                margin: 80px;
+            .company-logo {
+                display: block;
+                margin: 0 auto 20px;
+                width: 200px;
             }
 
             .text {
-                width: 50%;
-                margin-left: 50px;
+                width: 70%;
 
                 .title {
                     font-size: 50px;
@@ -24,6 +31,7 @@
 
                 .description {
                     font-size: 25px;
+                    color: #FFFFFF;
                 }
             }
         }

@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import './styles/products.css'
 
 import valve1Img from '../assets/products/valve1.webp'
@@ -5,6 +7,19 @@ import valve2Img from '../assets/products/valve2.webp'
 import valve3Img from '../assets/products/valve3.webp'
 
 const Products = () => {
+    const location = useLocation()
+
+    useEffect(() => {
+        if (location.state?.section) {
+            const element = document.getElementById(location.state.section)
+            if (element) {
+                setTimeout(() => {
+                    const yOffset = element.getBoundingClientRect().top + window.scrollY - 100
+                    window.scrollTo({ top: yOffset, behavior: 'smooth' })
+                }, 100)
+            }
+        }
+    }, [location])
 
     return (<div id='products'>
         <section className='hero-banner'>
@@ -16,7 +31,7 @@ const Products = () => {
         </section>
         <section className='product-section'>
             <div className='container'>
-                <section className='valve-section'>
+                <section id='industrial-valve' className='valve-section'>
                     <h3 className='section-heading'>Industrial Valve</h3>
                     <div className='product-list'>
                         <div className='product-card'>
@@ -36,7 +51,7 @@ const Products = () => {
                         </div>
                     </div>
                 </section>
-                <section className='pipeline-strainers-section'>
+                <section id='pipeline-strainers' className='pipeline-strainers-section'>
                     <h3 className='section-heading'>Pipeline Strainers</h3>
                     <div className='product-list'>
                         <div className='product-card'>
