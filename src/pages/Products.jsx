@@ -51,7 +51,7 @@ const Products = () => {
                         </div>
                     </div>
                 </section>
-                <section id='pipeline-strainers' className='pipeline-strainers-section'>
+                <section id='strainers' className='pipeline-strainers-section'>
                     <h3 className='section-heading'>Pipeline Strainers</h3>
                     <div className='product-list'>
                         <div className='product-card'>
