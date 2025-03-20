@@ -1,13 +1,16 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import './styles/products.css'
 
 import valve1Img from '../assets/products/valve1.webp'
 import valve2Img from '../assets/products/valve2.webp'
 import valve3Img from '../assets/products/valve3.webp'
+import Modal from '../components/Modal'
 
 const Products = () => {
     const location = useLocation()
+
+    const [isModalOpen, setModalOpen] = useState(true)
 
     useEffect(() => {
         if (location.state?.section) {
@@ -114,6 +117,10 @@ const Products = () => {
                 </section>
             </div>
         </section>
+
+        <Modal isOpen={isModalOpen} onClose={() => setModalOpen()}>
+            Modal Body
+        </Modal>
     </div>)
 }
 
