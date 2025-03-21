@@ -7,10 +7,13 @@ import valve2Img from '../assets/products/valve2.webp'
 import valve3Img from '../assets/products/valve3.webp'
 import Modal from '../components/Modal'
 
+const yTypeStrainer = () => (<div className='product-slider'>Y Type Strainer</div>)
+const basketTypeStrainer = () => (<div className='product-slider'>Y Type Strainer</div>)
+
 const Products = () => {
     const location = useLocation()
 
-    const [isModalOpen, setModalOpen] = useState(true)
+    const [informationPopup, setInformationPopup] = useState({ isOpen: false, currentProduct: '' })
 
     useEffect(() => {
         if (location.state?.section) {
@@ -37,13 +40,13 @@ const Products = () => {
                 <section id='strainers'>
                     <h3 className='section-heading'>Strainers</h3>
                     <div className='product-list'>
-                        <div className='product-card'>
+                        <div className='product-card' onClick={() => setInformationPopup({ isOpen: true, currentProduct: 'yTypeStrainer' })}>
                             <img src={valve1Img} alt='product' className='product-image' />
                             <h4>Y Type Strainer</h4>
                             <p><b>Size:</b> ½” to 16”</p>
                             <p><b>Class:</b>150/300/600/900/1500</p>
                         </div>
-                        <div className='product-card'>
+                        <div className='product-card' onClick={() => setInformationPopup({ isOpen: true, currentProduct: 'basketTypeStrainer' })}>
                             <img src={valve2Img} alt='product' className='product-image' />
                             <h4>Basket Type Strainer</h4>
                             <p><b>Size:</b> 2" to 24"</p>
@@ -118,8 +121,9 @@ const Products = () => {
             </div>
         </section>
 
-        <Modal isOpen={isModalOpen} onClose={() => setModalOpen()}>
-            Modal Body
+        <Modal isOpen={informationPopup.isOpen} onClose={() => setInformationPopup({ isOpen: false, currentProduct: '' })}>
+            {informationPopup.currentProduct === 'yTypeStrainer' ? yTypeStrainer() : null}
+            {informationPopup.currentProduct === 'basketTypeStrainer' ? basketTypeStrainer() : null}
         </Modal>
     </div>)
 }
