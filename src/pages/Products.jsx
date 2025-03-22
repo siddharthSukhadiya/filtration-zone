@@ -7,8 +7,21 @@ import valve2Img from '../assets/products/valve2.webp'
 import valve3Img from '../assets/products/valve3.webp'
 import Modal from '../components/Modal'
 
-const yTypeStrainer = () => (<div className='product-slider'>Y Type Strainer</div>)
-const basketTypeStrainer = () => (<div className='product-slider'>Y Type Strainer</div>)
+const yTypeStrainer = () => (<div className='product-slider'>
+    <div className='slide'>
+        Y Type Strainer Cast
+    </div>
+    <div className='slide'>
+        Y Type Strainer Fabricated
+    </div>
+    <div className='slide'>
+        Y Type Strainer Forging
+    </div>
+    <div className='slide'>
+        Y Type Strainer PTFE Lined
+    </div>
+</div>)
+const basketTypeStrainer = () => (<div className='product-slider'>Casting, Fabricated </div>)
 
 const Products = () => {
     const location = useLocation()
