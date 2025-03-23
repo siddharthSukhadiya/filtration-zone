@@ -21,7 +21,14 @@ const yTypeStrainer = () => (<div className='product-slider'>
         Y Type Strainer PTFE Lined
     </div>
 </div>)
-const basketTypeStrainer = () => (<div className='product-slider'>Casting, Fabricated </div>)
+const basketTypeStrainer = () => (<div className='product-slider'>
+    <div className='slide'>
+        Basket Type Strainer Cast
+    </div>
+    <div className='slide'>
+        Basket Type Strainer Fabricated
+    </div>
+</div>)
 
 const Products = () => {
     const location = useLocation()
