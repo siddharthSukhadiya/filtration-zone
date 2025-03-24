@@ -21,6 +21,7 @@ const yTypeStrainer = () => (<div className='product-slider'>
         Y Type Strainer PTFE Lined
     </div>
 </div>)
+
 const basketTypeStrainer = () => (<div className='product-slider'>
     <div className='slide'>
         Basket Type Strainer Cast
@@ -60,17 +61,23 @@ const Products = () => {
                 <section id='strainers'>
                     <h3 className='section-heading'>Strainers</h3>
                     <div className='product-list'>
-                        <div className='product-card' onClick={() => setInformationPopup({ isOpen: true, currentProduct: 'yTypeStrainer' })}>
+                        <div className='product-card'>
                             <img src={valve1Img} alt='product' className='product-image' />
                             <h4>Y Type Strainer</h4>
                             <p><b>Size:</b> ½” to 16”</p>
                             <p><b>Class:</b>150/300/600/900/1500</p>
+                            <div class='btn-wrapper'>
+                                <button onClick={() => setInformationPopup({ isOpen: true, currentProduct: 'yTypeStrainer' })}>More Info</button>
+                            </div>
                         </div>
-                        <div className='product-card' onClick={() => setInformationPopup({ isOpen: true, currentProduct: 'basketTypeStrainer' })}>
+                        <div className='product-card'>
                             <img src={valve2Img} alt='product' className='product-image' />
                             <h4>Basket Type Strainer</h4>
                             <p><b>Size:</b> 2" to 24"</p>
                             <p><b>Class:</b>150/300</p>
+                            <div class='btn-wrapper'>
+                                <button onClick={() => setInformationPopup({ isOpen: true, currentProduct: 'basketTypeStrainer' })}>More Info</button>
+                            </div>
                         </div>
                         <div className='product-card'>
                             <img src={valve3Img} alt='product' className='product-image' />

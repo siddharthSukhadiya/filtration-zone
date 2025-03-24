@@ -37,12 +37,17 @@
             gap: 50px;
             padding: 20px;
             width: 100%;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
 
             .product-card {
                 border-radius: 10px;
                 box-shadow: 0px 0px 20px 0px #000000b3;
                 text-align: center;
                 padding: 10px;
+                position: relative;
 
                 img {
                     width: 100%;
@@ -58,6 +63,34 @@
                 p {
                     margin-top: 5px;
                 }
+
+                .btn-wrapper {
+                    border-radius: 10px;
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #00000055;
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;
+
+
+                    button {
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        color: #FFFFFF;
+                        background: var(--prime-color);
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        transition: background 0.3s;
+                    }
+                }
+            }
+
+            .product-card:hover .btn-wrapper {
+                opacity: 1;
             }
         }
 
