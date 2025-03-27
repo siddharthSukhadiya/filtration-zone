@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import './styles/products.css'
 
 import valve1Img from '../assets/products/valve1.webp'
@@ -7,34 +8,11 @@ import valve2Img from '../assets/products/valve2.webp'
 import valve3Img from '../assets/products/valve3.webp'
 import Modal from '../components/Modal'
 
-const yTypeStrainer = () => (<div className='product-slider'>
-    <div className='slide'>
-        Y Type Strainer Cast
-    </div>
-    <div className='slide'>
-        Y Type Strainer Fabricated
-    </div>
-    <div className='slide'>
-        Y Type Strainer Forging
-    </div>
-    <div className='slide'>
-        Y Type Strainer PTFE Lined
-    </div>
-</div>)
-
-const basketTypeStrainer = () => (<div className='product-slider'>
-    <div className='slide'>
-        Basket Type Strainer Cast
-    </div>
-    <div className='slide'>
-        Basket Type Strainer Fabricated
-    </div>
-</div>)
-
 const Products = () => {
     const location = useLocation()
 
-    const [informationPopup, setInformationPopup] = useState({ isOpen: false, currentProduct: '' })
+    const [informationPopup, setInformationPopup] = useState({ isOpen: false, currentProduct: '', currentIndex: 1 })
+    const [currentIndex, setCurrentIndex] = useState(1);
 
     useEffect(() => {
         if (location.state?.section) {
@@ -47,6 +25,77 @@ const Products = () => {
             }
         }
     }, [location])
+
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => prevIndex + 1)
+    }
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => prevIndex - 1)
+    }
+
+    const yTypeStrainer = () => (<div className='product-slider'>
+        <button className={currentIndex === 1 ? 'disable-arrow' : 'arrow'} disabled={currentIndex === 1} onClick={prevSlide}><FaChevronLeft /></button>
+        <div className='slide' style={{ display: currentIndex === 1 ? 'flex' : 'none' }}>
+            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='information'>
+                <h4>Y Type Strainer Casted</h4>
+                <p><b>Size:</b> ½” to 3”</p>
+                <p><b>Class:</b>150/300/600</p>
+            </div>
+        </div>
+        <div className='slide' style={{ display: currentIndex === 2 ? 'flex' : 'none' }}>
+            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='information'>
+                <h4>Y Type Strainer Fabricated</h4>
+                <p><b>Size:</b> ½” to 3”</p>
+                <p><b>Class:</b>150/300/600</p>
+            </div>
+        </div>
+        <div className='slide' style={{ display: currentIndex === 3 ? 'flex' : 'none' }}>
+            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='information'>
+                <h4>Y Type Strainer Forging</h4>
+                <p><b>Size:</b> ½” to 3”</p>
+                <p><b>Class:</b>150/300/600</p>
+            </div>
+        </div>
+        <div className='slide' style={{ display: currentIndex === 4 ? 'flex' : 'none' }}>
+            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='information'>
+                <h4>Y Type Strainer PTFE Lined</h4>
+                <p><b>Size:</b> ½” to 3”</p>
+                <p><b>Class:</b>150/300/600</p>
+            </div>
+        </div>
+        <button className={currentIndex === 4 ? 'disable-arrow' : 'arrow'} disabled={currentIndex === 4} onClick={nextSlide}><FaChevronRight /></button>
+    </div>)
+
+    const basketTypeStrainer = () => (<div className='product-slider'>
+        <button className={currentIndex === 1 ? 'disable-arrow' : 'arrow'} disabled={currentIndex === 1} onClick={prevSlide}><FaChevronLeft /></button>
+        <div className='slide' style={{ display: currentIndex === 1 ? 'flex' : 'none' }}>
+            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='information'>
+                <h4>Basket Type Strainer Cast</h4>
+                <p><b>Size:</b> ½” to 3”</p>
+                <p><b>Class:</b>150/300/600</p>
+            </div>
+        </div>
+        <div className='slide' style={{ display: currentIndex === 2 ? 'flex' : 'none' }}>
+            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='information'>
+                <h4>Basket Type Strainer Fabricated</h4>
+                <p><b>Size:</b> ½” to 3”</p>
+                <p><b>Class:</b>150/300/600</p>
+            </div>
+        </div>
+        <button className={currentIndex === 2 ? 'disable-arrow' : 'arrow'} disabled={currentIndex === 2} onClick={nextSlide}><FaChevronRight /></button>
+    </div>)
+
+    const showProductPopup = (currentProduct) => {
+        setInformationPopup({ isOpen: true, currentProduct })
+        setCurrentIndex(1)
+    }
 
     return (<div id='products'>
         <section className='hero-banner'>
@@ -67,16 +116,16 @@ const Products = () => {
                             <p><b>Size:</b> ½” to 16”</p>
                             <p><b>Class:</b>150/300/600/900/1500</p>
                             <div class='btn-wrapper'>
-                                <button onClick={() => setInformationPopup({ isOpen: true, currentProduct: 'yTypeStrainer' })}>More Info</button>
+                                <button onClick={() => showProductPopup('yTypeStrainer')}>More Info</button>
                             </div>
                         </div>
                         <div className='product-card'>
                             <img src={valve2Img} alt='product' className='product-image' />
                             <h4>Basket Type Strainer</h4>
-                            <p><b>Size:</b> 2" to 24"</p>
+                            <p><b>Size:</b> 2' to 24'</p>
                             <p><b>Class:</b>150/300</p>
                             <div class='btn-wrapper'>
-                                <button onClick={() => setInformationPopup({ isOpen: true, currentProduct: 'basketTypeStrainer' })}>More Info</button>
+                                <button onClick={() => showProductPopup('basketTypeStrainer')}>More Info</button>
                             </div>
                         </div>
                         <div className='product-card'>

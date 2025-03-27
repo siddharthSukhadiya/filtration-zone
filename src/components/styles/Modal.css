@@ -15,8 +15,8 @@
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        width: 90%;
-        max-width: 500px;
+        width: max-content;
+        max-width: 90%;
         z-index: 1001;
         position: relative;
         animation: fadeIn 0.3s ease-in-out;

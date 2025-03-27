@@ -97,17 +97,81 @@
 
         @media (max-width: 768px) {
             .product-list {
-                gap: 20px;
+                gap: 0px;
                 padding: 0 20px;
                 width: 100%;
+                grid-template-columns: 100%;
 
                 .product-card {
                     width: 100%;
-                    margin-bottom: 25px;
+                    margin: 25px 0;
 
                     img {
-                        object-fit: cover;
+                        width: 50%;
                     }
+                }
+            }
+        }
+    }
+
+    .modal-content {
+        .product-slider {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .slide {
+                flex: 1;
+                padding: 30px;
+                border-radius: 10px;
+                transition: all 0.3s ease-in-out;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 200px;
+                }
+
+                .information {
+                    width: 250px;
+                    display: inline-block;
+                    box-sizing: border-box;
+
+                    h4 {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .arrow,
+            .disable-arrow {
+                position: relative;
+                background: transparent;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                transition: background 0.3s;
+                color: #333333;
+            }
+
+            .disable-arrow {
+                color: #727272;
+                cursor: default;
+            }
+
+            .arrow:hover {
+                color: #000000;
+            }
+
+            .arrow * {
+                cursor: pointer;
+            }
+
+            @media (max-width: 768px) {
+                .slide {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0;
                 }
             }
         }
