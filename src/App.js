@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 
 const Products = lazy(() => import('./pages/Products'))
+const ComingSoon = lazy(() => import('./pages/comingSoon'))
 const ContactUs = lazy(() => import('./pages/ContactUs'))
 
 const App = () => {
@@ -20,10 +21,12 @@ const App = () => {
             <Header />
             <div style={{ marginTop: '100px' }}>
                 <Routes>
-                    <Route path='/' element={<Home />} />
                     <Route path='/filtration-zone' element={<Home />} />
+                    <Route path='/' element={<Home />} />
                     <Route path='/products' element={<Products />} />
+                    <Route path='/about' element={<ComingSoon />} />
                     <Route path='/contact-us' element={<ContactUs />} />
+                    <Route path='*' element={<Home />} />
                 </Routes>
             </div>
             <Footer />
