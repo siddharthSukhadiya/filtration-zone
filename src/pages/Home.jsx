@@ -4,11 +4,12 @@ import { MdRemoveRedEye } from 'react-icons/md'
 import { FaEarthAsia } from 'react-icons/fa6'
 
 import './styles/home.css'
-import companyLogo from '../assets/companyLogoWhite.png'
-import aboutUsImg from '../assets/homePage/about-us.png'
-import teeStrainers from '../assets/homePage/tee-strainers.webp'
-import filtersImg from '../assets/homePage/filters.webp'
-import filterHousingImg from '../assets/homePage/filter-housing.jpeg'
+import companyLogo from '../assets/companyLogo.png'
+import aboutUsImg from '../assets/homePage/about-us.webp'
+import strainers from '../assets/homePage/strainers.webp'
+import valve from '../assets/homePage/valve.webp'
+import filterHousingImg from '../assets/homePage/filterHousing.webp'
+import tankAndVessels from '../assets/homePage/tankAndVessels.webp'
 import chooseUsBackground from '../assets/homePage/choose-us-background.png'
 
 const Home = () => {
@@ -90,25 +91,33 @@ const Home = () => {
                     <div className='list'>
                         <div className='item'>
                             <NavLink to='/products' state={{ section: 'strainers' }}>
-                                <img src={teeStrainers} alt='Strainers' />
+                                <div className='image-wrapper'>
+                                    <img src={strainers} alt='Strainers' />
+                                </div>
                                 <p>Strainers</p>
                             </NavLink>
                         </div>
                         <div className='item'>
                             <NavLink to='/products' state={{ section: 'industrial-valve' }}>
-                                <img src={filtersImg} alt='Industrial Valve' />
+                                <div className='image-wrapper'>
+                                    <img src={valve} alt='Industrial Valve' />
+                                </div>
                                 <p>Industrial Valve</p>
                             </NavLink>
                         </div>
                         <div className='item'>
                             <NavLink to='/products' state={{ section: 'bag-filter' }}>
-                                <img src={filterHousingImg} alt='Bag Filter Housings' />
+                                <div className='image-wrapper'>
+                                    <img src={filterHousingImg} alt='Bag Filter Housings' />
+                                </div>
                                 <p>Bag Filter Housing</p>
                             </NavLink>
                         </div>
                         <div className='item'>
                             <NavLink to='/products' state={{ section: 'tank-vessels' }}>
-                                <img src={filterHousingImg} alt='Tank and Vessels' />
+                                <div className='image-wrapper'>
+                                    <img src={tankAndVessels} alt='Tank and Vessels' />
+                                </div>
                                 <p>Tank and vessels</p>
                             </NavLink>
                         </div>

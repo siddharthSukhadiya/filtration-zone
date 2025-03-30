@@ -3,9 +3,24 @@ import { useLocation } from 'react-router-dom'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import './styles/products.css'
 
-import valve1Img from '../assets/products/valve1.webp'
-import valve2Img from '../assets/products/valve2.webp'
-import valve3Img from '../assets/products/valve3.webp'
+import yStrainer from '../assets/products/yStrainer.webp'
+import yStrainer1 from '../assets/products/yStrainer_1.webp'
+import yStrainer2 from '../assets/products/yStrainer_2.webp'
+import yStrainer3 from '../assets/products/yStrainer_3.webp'
+import yStrainer4 from '../assets/products/yStrainer_4.webp'
+import basketStrainer1 from '../assets/products/basketStrainer1.webp'
+import basketStrainer2 from '../assets/products/basketStrainer2.webp'
+import conicalStrainer from '../assets/products/conicalStrainer.webp'
+import teeStrainer from '../assets/products/teeStrainer.webp'
+import duplexStrainer from '../assets/products/duplexStrainer.webp'
+import selfCleaningFilter from '../assets/products/selfCleaningFilter.webp'
+import valveBall from '../assets/products/valveBall.webp'
+import valveGate from '../assets/products/valveGate.webp'
+import valveGlobe from '../assets/products/valveGlobe.webp'
+import valveButterfly from '../assets/products/valveButterfly.webp'
+import filterHousing_cartridge from '../assets/products/filterHousing_cartridge.webp'
+import filterHousing_bag from '../assets/products/filterHousing_bag.webp'
+
 import Modal from '../components/Modal'
 
 const Products = () => {
@@ -37,7 +52,9 @@ const Products = () => {
     const yTypeStrainer = () => (<div className='product-slider'>
         <button className={currentIndex === 1 ? 'disable-arrow' : 'arrow'} disabled={currentIndex === 1} onClick={prevSlide}><FaChevronLeft /></button>
         <div className='slide' style={{ display: currentIndex === 1 ? 'flex' : 'none' }}>
-            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='image-wrapper'>
+                <img src={yStrainer1} alt='Y Type Strainer Casted' className='product-image' />
+            </div>
             <div className='information'>
                 <h4>Y Type Strainer Casted</h4>
                 <p><b>Size:</b> ½” to 3”</p>
@@ -45,7 +62,9 @@ const Products = () => {
             </div>
         </div>
         <div className='slide' style={{ display: currentIndex === 2 ? 'flex' : 'none' }}>
-            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='image-wrapper'>
+                <img src={yStrainer2} alt='Y Type Strainer Fabricated' className='product-image' />
+            </div>
             <div className='information'>
                 <h4>Y Type Strainer Fabricated</h4>
                 <p><b>Size:</b> ½” to 3”</p>
@@ -53,7 +72,9 @@ const Products = () => {
             </div>
         </div>
         <div className='slide' style={{ display: currentIndex === 3 ? 'flex' : 'none' }}>
-            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='image-wrapper'>
+                <img src={yStrainer3} alt='Y Type Strainer Forging' className='product-image' />
+            </div>
             <div className='information'>
                 <h4>Y Type Strainer Forging</h4>
                 <p><b>Size:</b> ½” to 3”</p>
@@ -61,7 +82,9 @@ const Products = () => {
             </div>
         </div>
         <div className='slide' style={{ display: currentIndex === 4 ? 'flex' : 'none' }}>
-            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='image-wrapper'>
+                <img src={yStrainer4} alt='Y Type Strainer PTFE Lined' className='product-image' />
+            </div>
             <div className='information'>
                 <h4>Y Type Strainer PTFE Lined</h4>
                 <p><b>Size:</b> ½” to 3”</p>
@@ -74,7 +97,9 @@ const Products = () => {
     const basketTypeStrainer = () => (<div className='product-slider'>
         <button className={currentIndex === 1 ? 'disable-arrow' : 'arrow'} disabled={currentIndex === 1} onClick={prevSlide}><FaChevronLeft /></button>
         <div className='slide' style={{ display: currentIndex === 1 ? 'flex' : 'none' }}>
-            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='image-wrapper'>
+                <img src={basketStrainer1} alt='Basket Type Strainer Cast' className='product-image' />
+            </div>
             <div className='information'>
                 <h4>Basket Type Strainer Cast</h4>
                 <p><b>Size:</b> ½” to 3”</p>
@@ -82,7 +107,9 @@ const Products = () => {
             </div>
         </div>
         <div className='slide' style={{ display: currentIndex === 2 ? 'flex' : 'none' }}>
-            <img src={valve1Img} alt='product' className='product-image' />
+            <div className='image-wrapper'>
+                <img src={basketStrainer2} alt='Basket Type Strainer Fabricated' className='product-image' />
+            </div>
             <div className='information'>
                 <h4>Basket Type Strainer Fabricated</h4>
                 <p><b>Size:</b> ½” to 3”</p>
@@ -111,7 +138,9 @@ const Products = () => {
                     <h3 className='section-heading'>Strainers</h3>
                     <div className='product-list'>
                         <div className='product-card'>
-                            <img src={valve1Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={yStrainer} alt='Y Type Strainer' className='product-image' />
+                            </div>
                             <h4>Y Type Strainer</h4>
                             <p><b>Size:</b> ½” to 16”</p>
                             <p><b>Class:</b>150/300/600/900/1500</p>
@@ -120,7 +149,9 @@ const Products = () => {
                             </div>
                         </div>
                         <div className='product-card'>
-                            <img src={valve2Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={basketStrainer1} alt='Basket Type Strainer' className='product-image' />
+                            </div>
                             <h4>Basket Type Strainer</h4>
                             <p><b>Size:</b> 2' to 24'</p>
                             <p><b>Class:</b>150/300</p>
@@ -129,26 +160,34 @@ const Products = () => {
                             </div>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={conicalStrainer} alt='Conical Strainer' className='product-image' />
+                            </div>
                             <h4>Conical Strainer</h4>
                             <p><b>Size:</b> 1½” to 8”</p>
                             <p><b>Class:</b>150</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={teeStrainer} alt='Tee Strainer' className='product-image' />
+                            </div>
                             <h4>Tee Strainer</h4>
                             <p><b>Size:</b> ½” to 16”</p>
                             <p><b>Class:</b>150/300/600/900/1500</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={duplexStrainer} alt='Duplex Strainer' className='product-image' />
+                            </div>
                             <h4>Duplex Strainer</h4>
                             <p><b>Size:</b> ½” to 24”</p>
                             <p><b>Class:</b>150/300/600/900</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
-                            <h4>Self Cleaning Strainer</h4>
+                            <div className='image-wrapper'>
+                                <img src={selfCleaningFilter} alt='Self Cleaning Filter' className='product-image' />
+                            </div>
+                            <h4>Self Cleaning Filter</h4>
                             <p><b>Size:</b> ½” to 24”</p>
                             <p><b>Class:</b>150/300/600/900</p>
                         </div>
@@ -158,22 +197,30 @@ const Products = () => {
                     <h3 className='section-heading'>Industrial Valve</h3>
                     <div className='product-list'>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={valveBall} alt='Ball valve' className='product-image' />
+                            </div>
                             <h4>Ball valve</h4>
                             <p><b>Material:</b> WCB, CF8, CF8M</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={valveGate} alt='Gate Valve' className='product-image' />
+                            </div>
                             <h4>Gate Valve</h4>
                             <p><b>Material:</b> WCB, CF8, CF8M, CF3, CF3M</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={valveGlobe} alt='Globe Valve' className='product-image' />
+                            </div>
                             <h4>Globe Valve</h4>
                             <p><b>Material:</b> WCB, CF8, CF8M, CF3, CF3M</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={valveButterfly} alt='Butterfly Valve' className='product-image' />
+                            </div>
                             <h4>Butterfly Valve</h4>
                             <p><b>Material:</b> WCB, CF8, CF8M, CF3, CF3M</p>
                         </div>
@@ -183,14 +230,18 @@ const Products = () => {
                     <h3 className='section-heading'>Bag filter</h3>
                     <div className='product-list'>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={filterHousing_bag} alt='Bag filter housing' className='product-image' />
+                            </div>
                             <h4>Bag filter housing</h4>
-                            <p><b>Material:</b> WCB, CF8, CF8M</p>
+                            <p><b>Material:</b> SS304, SS316</p>
                         </div>
                         <div className='product-card'>
-                            <img src={valve3Img} alt='product' className='product-image' />
+                            <div className='image-wrapper'>
+                                <img src={filterHousing_cartridge} alt='Cartridge filter Housing' className='product-image' />
+                            </div>
                             <h4>Cartridge filter Housing</h4>
-                            <p><b>Material:</b> WCB, CF8, CF8M</p>
+                            <p><b>Material:</b> SS304, SS316</p>
                         </div>
                     </div>
                 </section>

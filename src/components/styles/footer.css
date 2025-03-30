@@ -5,7 +5,7 @@ footer {
 	.footer-wraper {
 		display: flex;
 		justify-content: space-between;
-		margin: 100px 0;
+		margin: 50px 0 80px;
 
 		div {
 			.title {
@@ -30,6 +30,10 @@ footer {
 		.company {
 			width: 500px;
 
+			img {
+				width: 200px;
+			}
+
 			p {
 				margin-top: 10px;
 			}
@@ -49,6 +53,10 @@ footer {
 				ul li a {
 					font-size: 16px;
 				}
+			}
+
+			.company {
+				width: 100%;
 			}
 		}
 	}

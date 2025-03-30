@@ -4,6 +4,13 @@ header {
 	align-items: center;
 	padding: 20px 100px;
 
+
+	.logo {
+		img {
+			width: 150px;
+		}
+	}
+
 	nav {
 		.nav-links {
 			display: flex;
