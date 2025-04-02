@@ -200,7 +200,7 @@ const Products = () => {
                             <div className='image-wrapper'>
                                 <img src={valveBall} alt='Ball valve' className='product-image' />
                             </div>
-                            <h4>Ball valve</h4>
+                            <h4>Ball Valve</h4>
                             <p><b>Material:</b> WCB, CF8, CF8M</p>
                         </div>
                         <div className='product-card'>
@@ -227,20 +227,20 @@ const Products = () => {
                     </div>
                 </section>
                 <section id='bag-filter'>
-                    <h3 className='section-heading'>Bag filter</h3>
+                    <h3 className='section-heading'>Bag Filter</h3>
                     <div className='product-list'>
                         <div className='product-card'>
                             <div className='image-wrapper'>
                                 <img src={filterHousing_bag} alt='Bag filter housing' className='product-image' />
                             </div>
-                            <h4>Bag filter housing</h4>
+                            <h4>Bag Filter Housing</h4>
                             <p><b>Material:</b> SS304, SS316</p>
                         </div>
                         <div className='product-card'>
                             <div className='image-wrapper'>
                                 <img src={filterHousing_cartridge} alt='Cartridge filter Housing' className='product-image' />
                             </div>
-                            <h4>Cartridge filter Housing</h4>
+                            <h4>Cartridge Filter Housing</h4>
                             <p><b>Material:</b> SS304, SS316</p>
                         </div>
                     </div>
